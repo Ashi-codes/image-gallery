@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="top-controls">
+        <button id="darkModeBtn">🌙 Dark Mode</button>
+    </div>
+
+    <h1>Image Gallery</h1>
+
+    <!-- FILTERS -->
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="cars">Cars</button>
+        <button class="filter-btn" data-filter="animals">Animals</button>
+        <button class="filter-btn" data-filter="favorites">Favorites ❤️</button>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery">
+
+        <div class="image-wrapper"><img src="images/f.jpg" class="gallery-item nature" data-id="0"></div>
+        <div class="image-wrapper"><img src="images/n1.jpg" class="gallery-item nature" data-id="1"></div>
+        <div class="image-wrapper"><img src="images/r1.jpg" class="gallery-item nature" data-id="2"></div>
+        <div class="image-wrapper"><img src="images/r2.jpg" class="gallery-item nature" data-id="3"></div>
+        <div class="image-wrapper"><img src="images/r3.jpg" class="gallery-item nature" data-id="4"></div>
+        <div class="image-wrapper"><img src="images/r4.jpg" class="gallery-item nature" data-id="5"></div>
+        <div class="image-wrapper"><img src="images/w1.jpg" class="gallery-item nature" data-id="6"></div>
+        <div class="image-wrapper"><img src="images/w2.jpg" class="gallery-item nature" data-id="7"></div>
+        <div class="image-wrapper"><img src="images/w3.jpg" class="gallery-item nature" data-id="8"></div>
+
+        <div class="image-wrapper"><img src="images/c1.jpg" class="gallery-item cars" data-id="9"></div>
+        <div class="image-wrapper"><img src="images/c2.webp" class="gallery-item cars" data-id="10"></div>
+        <div class="image-wrapper"><img src="images/c3.jpg" class="gallery-item cars" data-id="11"></div>
+        <div class="image-wrapper"><img src="images/c4.jpg" class="gallery-item cars" data-id="12"></div>
+        <div class="image-wrapper"><img src="images/c5.webp" class="gallery-item cars" data-id="13"></div>
+        <div class="image-wrapper"><img src="images/c6.webp" class="gallery-item cars" data-id="14"></div>
+        <div class="image-wrapper"><img src="images/c7.webp" class="gallery-item cars" data-id="15"></div>
+
+        <div class="image-wrapper"><img src="images/a1.jfif" class="gallery-item animals" data-id="16"></div>
+        <div class="image-wrapper"><img src="images/a2.jpg" class="gallery-item animals" data-id="17"></div>
+        <div class="image-wrapper"><img src="images/a3.webp" class="gallery-item animals" data-id="18"></div>
+        <div class="image-wrapper"><img src="images/a4.jfif" class="gallery-item animals" data-id="19"></div>
+        <div class="image-wrapper"><img src="images/a5.jpg" class="gallery-item animals" data-id="20"></div>
+        <div class="image-wrapper"><img src="images/a6.webp" class="gallery-item animals" data-id="21"></div>
+
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox">
+        <span class="close">&times;</span>
+        <button id="prev">⏮</button>
+
+        <img id="lightbox-img">
+
+        <button id="next">⏭</button>
+
+        <div class="lightbox-info">
+            <span id="imageCounter"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

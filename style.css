@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #222;
+    color: white;
+    transition: 0.3s;
+}
+
+.filter-btn.active {
+    background: #007bff;
+    transform: scale(1.05);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.image-wrapper {
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* FAVORITE */
+.favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.favorite.active {
+    color: red;
+}
+
+/* LIGHTBOX */
+.lightbox {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox img {
+    width: 70%;
+    max-width: 800px;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+#prev,
+#next {
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.lightbox-info {
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+/* DARK MODE */
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark .filter-btn {
+    background: #444;
+}
+
+body.dark .filter-btn.active {
+    background: #1e90ff;
+    box-shadow: 0 0 12px #1e90ff;
+}
+
+.top-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+#darkModeBtn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#darkModeBtn:hover {
+    transform: scale(1.05);
+}
