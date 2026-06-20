@@ -33,15 +33,17 @@ Fully responsive for:
 - Desktop screens
 
 ---
+
 ## 🌐 Live Demo
 https://ashi-image-gallery.netlify.app/
+
 ---
 
 ## Author
 Created by: **AYESHA K.**
 
 ---
-📌 GitHub Repository
+## GitHub Repository
 
 https://github.com/Ashi-codes/image-gallery.git
 
