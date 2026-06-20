@@ -41,5 +41,8 @@ https://ashi-image-gallery.netlify.app/
 Created by: **AYESHA K.**
 
 ---
+📌 GitHub Repository
+
+https://github.com/Ashi-codes/image-gallery.git
 
 Frontend Development Intern – CodeAlpha
