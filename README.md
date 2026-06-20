@@ -37,7 +37,7 @@ Fully responsive for:
 https://ashi-image-gallery.netlify.app/
 ---
 
-## 👨‍💻 Author
+## Author
 Created by: **AYESHA K.**
 
 ---
